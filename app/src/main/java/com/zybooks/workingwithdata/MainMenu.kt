@@ -29,5 +29,12 @@ class MainMenu : AppCompatActivity() {
             var intent = Intent(this, NasaAPI::class.java)
             startActivity(intent)
         }
+
+        var exoPlanetButton = findViewById<Button>(R.id.exoPlanetButton)
+        exoPlanetButton.setOnClickListener {
+            var intent = Intent(this, ExoPlanet::class.java)
+            startActivity(intent)
+        }
+
     }
 }
